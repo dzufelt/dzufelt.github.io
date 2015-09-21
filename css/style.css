@@ -201,6 +201,10 @@ section .professional-development .container{
 	border-bottom: none;
 }
 
+.work-experience-container{
+	flex-direction: column;
+}
+
 /*SKILLS SECTION*/
 
 .skills h2{
