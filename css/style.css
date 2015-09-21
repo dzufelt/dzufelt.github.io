@@ -216,6 +216,11 @@ section .professional-development .container{
 	color: whitesmoke;
 }
 
+.skills-container{
+	display: flex;
+	justify-content: space-around;
+}
+
 .skills{
 	background-color: dimgray;
 	text-align: left;
