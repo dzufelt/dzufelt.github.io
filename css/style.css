@@ -144,6 +144,11 @@ header .container {
 	background:whitesmoke;
 }
 
+section .professional-development .container{
+	justify-content: space-around;
+	text-align: center
+}
+
 .courses{
 /*	width: 20%;*/
 	height: 100px;
