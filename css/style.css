@@ -1,0 +1,262 @@
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Some default styles to make each box visible */
+.box {
+}
+
+/* Colours for each box */
+.box1 { background:#1abc9c;}
+.box2 { background:#3498db;}
+.box3 { background:#9b59b6;}
+.box4 { background:#34495e;}
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;}
+.box7 { background:#e74c3c;}
+.box8 { background:#bdc3c7;}
+.box9 { background:#2ecc71;}
+.box10 { background:#16a085;}
+
+
+/* We start writing out flexbox here. The above is just page setup */
+.container {
+  display:flex;
+  /*border:10px solid goldenrod;*/
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body{
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 18px;
+	font-weight: lighter;
+	background: url(../images/lollipop.jpg) no-repeat fixed 0% 25% / cover;
+	text-align: left;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dotted dimgray;
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+	color: black;
+	font-size: 72px;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+
+h2{
+	font-style: italic;
+	color: dimgray;
+	/*text-transform: uppercase;*/
+	font-size: 28px;
+	font-weight: 300;
+}
+
+h3{
+	font-family: 'Pacifico', cursive;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+/*.content-wrapper{
+	max-width: 1000px;
+	width: 90%;
+	margin:0 auto;
+	padding: 10px 0;
+}*/
+
+.download{
+	position: fixed;
+	bottom: 25px;
+	right: 50px;
+	padding: 5px;
+	color: dimgray;
+	background: whitesmoke;
+	text-decoration: none;
+    width: 175px;
+    height: 30px; 
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.download:hover{
+	background:black;
+	color:white;
+}
+
+@media(max-width: 750px){
+	.download{
+		top: 10px;
+		right: 10px;
+	}
+}
+
+/*HEADER*/
+
+header
+
+.header{
+	height: 300px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin:0px;
+}
+
+.header h2{
+	color: black;
+}
+
+header .container {
+	justify-content: center;
+	text-align: center
+}
+
+/*PROFILE SECTION*/
+
+.profile{
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.profile h2{
+	color: whitesmoke;
+}
+
+.summary h3{
+	font-size: 48px;
+	margin: 0px;
+}
+
+.summary{
+/*	float: left;
+	width: 70%;*/
+	padding: 10px;
+	margin-top: 25px;
+	color:whitesmoke;
+}
+
+@media(max-width: 750px){
+
+	.summary{
+		/*width:100%;*/
+		margin-top: 10px;
+		text-align: justify;
+	}
+}
+
+/*PROFESSIONAL DEVELOPMENT SECTION*/
+
+.professional-development{
+	background:whitesmoke;
+}
+
+.courses{
+/*	width: 20%;*/
+	height: 100px;
+	font-size: 14px;
+	background: rgba(105, 105, 105, 0.6);
+/*	float:left;*/
+	border: 1px solid black;
+	/*margin-right: 20%;*/
+	padding-top: 30px;
+	color: whitesmoke;
+	border-radius: 15px;
+    border: 2px solid dimgray;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+/*.courses:last-of-type{
+	margin-right:0;
+}
+*/
+.courses:hover{
+	background: black;
+}
+
+@media(max-width: 750px){
+/*	.courses{
+	width: 30%;
+	height: 100px;
+	padding-top: 30px;
+	float:left;
+	border: 1px solid black;
+	margin-right: 5%;*/
+}
+
+/*.courses:last-of-type{
+	margin-right:0;
+}*/
+
+/*WORK EXPERIENCE SECTION*/
+
+.work-experience{
+	background:whitesmoke;
+}
+
+.work-experience .item{
+	border-bottom: 1px dashed dimgray;
+}
+
+.work-experience .item:last-of-type{
+	border-bottom: none;
+}
+
+/*SKILLS SECTION*/
+
+.skills h2{
+	color: whitesmoke;
+	margin-left: 30px;
+}
+
+.skills li{
+	color: whitesmoke;
+}
+
+.skills{
+	background-color: dimgray;
+	text-align: left;
+    padding: 0px 0;
+}
+
+@media(max-width:750px){
+}
+
+/*EDUCATION SECTION*/
+
+.education{
+	background: whitesmoke;
+}
+
+/*CONTACT SECTION*/
+
+.contact{
+	color: whitesmoke;
+	background: url(../images/sunset.jpg) fixed 0% 0% / cover;
+}
+
+.contact a{
+	color: whitesmoke;
+}
+
+.contact .fa-twitter{
+	color: #67AEEB;
+}
+
+.contact .fa-linkedin{
+	color: #3488BD;
+}
+
+.contact .fa-github{
+	color: whitesmoke;
+}
+
+.contact a{
+	border-bottom: none;
+}
+
