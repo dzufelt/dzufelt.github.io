@@ -110,6 +110,12 @@ header .container {
 	color: whitesmoke;
 }
 
+.profile-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 .profile-img-container .profile-img{
 	width: 200px;
 	height: 200px;
@@ -118,7 +124,6 @@ header .container {
 
 .summary h3{
 	font-size: 48px;
-	margin: 0px;
 }
 
 .summary{
@@ -132,9 +137,11 @@ header .container {
 @media(max-width: 750px){
 
 	.summary{
-		/*width:100%;*/
 		margin-top: 10px;
 		text-align: justify;
+	}
+	.profile-container{
+		display: inline-block;
 	}
 }
 
@@ -142,6 +149,7 @@ header .container {
 
 .professional-development{
 	background:whitesmoke;
+	padding: 10px 71px;
 }
 
 section .professional-development .container{
@@ -191,6 +199,7 @@ section .professional-development .container{
 
 .work-experience{
 	background:whitesmoke;
+	padding: 10px 71px;
 }
 
 .work-experience .item{
@@ -209,7 +218,7 @@ section .professional-development .container{
 
 .skills h2{
 	color: whitesmoke;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 }
 
 .skills li{
@@ -219,21 +228,27 @@ section .professional-development .container{
 .skills-container{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .skills{
 	background-color: dimgray;
 	text-align: left;
-    padding: 0px 0;
+    padding: 10px 71px;
 }
 
 @media(max-width:750px){
+	.skills-container{
+	display: flex;
+	justify-content: flex-start;
+	}
 }
 
 /*EDUCATION SECTION*/
 
 .education{
 	background: whitesmoke;
+	padding: 10px 71px;
 }
 
 /*CONTACT SECTION*/
@@ -241,6 +256,7 @@ section .professional-development .container{
 .contact{
 	color: whitesmoke;
 	background: url(../images/sunset.jpg) fixed 0% 0% / cover;
+	padding: 10px 71px;
 }
 
 .contact a{
