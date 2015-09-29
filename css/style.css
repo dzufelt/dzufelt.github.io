@@ -113,14 +113,19 @@ header .container {
 .profile-container{
 	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
+	align-items: center;
+	/*flex-wrap: wrap;*/
 }
 
-.profile-img-container .profile-img{
+.profile-img{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 }
+
+/*.profile-img-container{
+	flex-grow: 1;
+}*/
 
 .summary h3{
 	font-size: 48px;
@@ -129,12 +134,17 @@ header .container {
 .summary{
 /*	float: left;
 	width: 70%;*/
-	padding: 10px;
+/*	flex-grow: 2;
+*/	padding: 10px;
 	margin-top: 25px;
 	color:whitesmoke;
-}
+	}
 
 @media(max-width: 750px){
+
+	.profile-img{
+		margin-top: 25px;
+	}
 
 	.summary{
 		margin-top: 10px;
@@ -152,9 +162,11 @@ header .container {
 	padding: 10px 71px;
 }
 
-section .professional-development .container{
+.professional-development-container{
+	display:flex;
 	justify-content: space-around;
-	text-align: center
+	text-align: center;
+	flex-wrap: wrap;
 }
 
 .courses{
@@ -162,6 +174,8 @@ section .professional-development .container{
 	height: 100px;
 	font-size: 14px;
 	background: rgba(105, 105, 105, 0.6);
+	margin: 10px;
+	width: 180px;
 /*	float:left;*/
 	border: 1px solid black;
 	/*margin-right: 20%;*/
@@ -182,18 +196,11 @@ section .professional-development .container{
 }
 
 @media(max-width: 750px){
-/*	.courses{
-	width: 30%;
-	height: 100px;
-	padding-top: 30px;
-	float:left;
-	border: 1px solid black;
-	margin-right: 5%;*/
+	.professional-development-container{
+	display: flex;
+	justify-content: flex-start;
+	}
 }
-
-/*.courses:last-of-type{
-	margin-right:0;
-}*/
 
 /*WORK EXPERIENCE SECTION*/
 
